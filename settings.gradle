@@ -1,2 +1,6 @@
 rootProject.name = 'gradle-multi-module'
-
+// 子模块
+include 'gradle-domain'
+include 'gradle-mapper'
+include 'gradle-service'
+include 'gradler-controller'
