@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id("java-library")
+}
+
+dependencies {
+    api project(":gradle-domain")
+
+    // https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter
+    api 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'
+
+    // https://mvnrepository.com/artifact/tk.mybatis/mapper-spring-boot-starter
+    api 'tk.mybatis:mapper-spring-boot-starter:4.2.3'
+    // https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter
+    api 'com.github.pagehelper:pagehelper-spring-boot-starter:1.4.7'
+
+    // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+    implementation 'com.mysql:mysql-connector-j:8.1.0'
+    // https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter
+    implementation 'com.alibaba:druid-spring-boot-starter:1.2.19'
+}
+
+test {
+    useJUnitPlatform()
+}
